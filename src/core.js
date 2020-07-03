@@ -22,13 +22,6 @@ var CryptoJS = CryptoJS || (function (Math, undefined) {
         crypto = global.crypto;
     }
 
-    // Native crypto import via require (NodeJS)
-    if (!crypto && typeof require === 'function') {
-        try {
-            crypto = require('crypto');
-        } catch (err) {}
-    }
-
     /*
      * Cryptographically secure pseudorandom number generator
      *
